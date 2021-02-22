@@ -8,7 +8,9 @@ function App() {
     <div className='App'>
       <Nav />
       <PageHeader title='Organización' style={{ fontWeight: '400' }} />
-      <TabPanel />
+      <main>
+        <TabPanel />
+      </main>
     </div>
   );
 }
