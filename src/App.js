@@ -1,7 +1,7 @@
 import Nav from './components/Nav';
 import TabPanel from './components/TabPanel';
 import { PageHeader } from 'antd';
-import './App.css';
+import './App.less';
 
 function App() {
   return (
