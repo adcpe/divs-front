@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Table, Pagination, Input, Button, Space } from 'antd';
+import { Table, Input, Button, Space } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
+import Subdivisions from './Subdivisions';
 import axios from 'axios';
 
 export default class TableContent extends Component {
@@ -117,6 +118,9 @@ export default class TableContent extends Component {
         title: 'Subdivisiones',
         dataIndex: 'subdivisions',
         sorter: (a, b) => (a.subdivisions < b.subdivisions ? -1 : 1),
+        render: (subdivisions, { id }) => (
+          <Subdivisions id={id} num={subdivisions} />
+        ),
       },
     ];
 
